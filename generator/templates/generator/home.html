@@ -1,0 +1,28 @@
+<h1>This is the new home page</h1>
+<hr>
+  <a href="{% url 'aboutus' %}">About Us</a>
+<hr>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<form action="{% url 'password' %}">
+  <select class="" name="length">
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12" selected="selected">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+  </select>
+  <br>
+  <input type="checkbox" name="uppercase"> Uppercase
+  <br>
+  <input type="checkbox" name="numbers"> Numbers
+  <br>
+  <input type="checkbox" name="special"> Special Characters
+  <br>
+  <input type="submit" name="" value="Generate Password">
+</form>
